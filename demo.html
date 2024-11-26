@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Html Demo</title>
+        <style>
+            .div{
+                table,th,td{
+                    border:2px solid black
+                }
+            }
+        </style>
+    </head>
+    <body>
+<h2><b>Div and Span</b></h2>
+
+<div class="div">
+    <h3><u> Table</u></h3>
+    <table>
+        <thead>
+            <th> Items</th><th> Expenditure</th>
+            </thead>
+            <tbody>
+                <tr><td>Stationary</td> <td>5000</td></tr>
+                <tr><td>toys</td><td>4000</td></tr>
+                <tr><td>Utensils</td><td>4000</td></tr>
+                <tr><td>Misc</td><td>7000</td></tr>
+            </tbody>
+        <tfoot>
+            <td>Total</td>
+            <td>14000</td>
+        </tfoot>
+    </table> 
+</div>
+
+<div class="div2">
+    <h3><u>Types of List</u></h3>
+    <h4>Description List</h4>
+    <dl>
+        <dt>Java</dt>
+        <dd>Java is a platform independent Language</dd>
+        <dt>SQL</dt>
+        <dd>Structured Query Language</dd>
+        <dt>React</dt>
+        <dd>User Interface, javascript lib</dd>
+    </dl>
+    <h4>Ordered List</h4>
+    <ol start="5">
+        <li>Java</li>
+        <li>Advance Java</li>
+        <li>Framework</li>
+        <li>Database</li>
+    </ol>
+    <h4>unordered list</h4>
+    <ul>
+        <li>Python
+        <ul>
+            <li>Djengo</li>
+            <li>Flask</li>
+        </ul>
+        </li>
+
+    </ul>
+</div>
+
+<div class="div3">
+    <h3><u>Form</u></h3>
+    <h4><i>Register Here</i></h4>
+    <p>Kindly fill in the form to register.</p>
+    <label for="username"><b>Username: </b></label>
+    <input type="text" placeholder="Enter email" name="email" id="email" required/>
+    <br>
+    <br>
+
+    <label for="pass"> <b> Password</b></label> 
+    <input type="pass" name="pass" id="pwd" required/>
+    <br>
+    <br>
+
+    <label for="re-pass"> <b> Repeat Password</b></label> 
+    <input type="pass" name="re-pass" id="re-pwd" required/>
+    <br>
+    <br>
+    
+
+    <fieldset>
+        <legend>Identification</legend>
+        <label><input type="checkbox" name="id"> Adhar Card</label>
+        <label><input type="checkbox" name="id"> Driving License</label>
+        <label><input type="checkbox" name="id"> Passport</label>
+        <label><input type="checkbox" name="id"> Employee ID</label>
+    </fieldset>
+
+
+</div>
+
+    </body>
+
+
+
+</html>
+

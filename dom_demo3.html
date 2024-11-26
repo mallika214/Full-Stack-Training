@@ -1,0 +1,48 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head><meta>
+    <title> getElementById</title>
+<script>
+    function getallparaElems(){
+      const allpara = document.getElementsByTagName("p");
+      const num = allpara.length;
+      alert(`There are ${num} paragraph in this doc we have `);
+    }
+    function div1paraElems(){
+        const alldiv1 = document.getElementById("div1");
+        const div1para = alldiv1.getElementsByTagName("p");
+      const num = div1para.length;
+      alert(`There are ${num} paragraph in div1 we have `);
+    }
+    function div2paraElem(){
+        const alldiv2 = document.getElementById("div2");
+        const div2para = alldiv2.getElementsByTagName("p");
+      const num = div2para.length;
+      alert(`There are ${num} paragraph in div2 we have `)
+    }
+</script></head>
+<body  style="border: solid green 4px;">
+    <p>text1</p>
+    <p>text2</p>
+    <div id="div1" style="border: solid blue 4px;">
+        <p>text1</p>
+        <p>text2</p>
+         <p>text3</p>
+        <div id="div2" style="border: solid red 4px;">
+            <p>text4</p>
+            <p>text4</p>
+             <p>text5</p>
+        </div>
+    </div>
+    <p>text1</p>
+    <p>text2</p>
+    <p>text3</p>
+    <button onclick="getallparaElems()"> Show all P element</button>
+    <button onclick="div1paraElems()"> Shwo all p elements in div1 element</button>
+    <button onclick="div2paraElem()"> Show all p elements in div2 element</button>
+</body>
+</html>
