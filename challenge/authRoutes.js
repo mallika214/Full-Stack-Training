@@ -1,30 +1,4 @@
-/*const express = require('express');
-const router = express.Router();
 
-// Mock user credentials
-const users = [
-    { username: 'admin', password: 'admin123', role: 'admin' },
-    { username: 'user', password: 'user123', role: 'user' }
-];
-
-// Login route
-router.post('/login', (req, res) => {
-    const { username, password, role } = req.body;  // Get username, password, and role from the form
-
-    const user = users.find(u => u.username === username && u.password === password && u.role === role);
-
-    if (user) {
-        if (user.role === 'admin') {
-            res.redirect('/products/admin');
-        } else if (user.role === 'user') {
-            res.redirect('/products/search');
-        }
-    } else {
-        res.send('Invalid credentials or role');
-    }
-});
-
-module.exports = router;*/
 
 const express = require('express');
 const router = express.Router();
